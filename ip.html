@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>IP Address</title>
+    <style>
+    p, h1 {
+        color: rgb(141, 11, 28);
+    }
+    </style>
+  
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+     
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+        $("#gfg").html(data.ip);
+    })
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <h1>What is ip adress dude!</h1>
+        <h3>You public ip adress:</h3>
+        <p id="gfg"></p>
+ 
+    </center>
+</body>
+ 
+</html> 
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+       
+    <style>
+    h1 {
+        color: rgb(141, 11, 28);
+    }
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+    <script>
+     
+    // Add "https://ipinfo.io" statement
+    // this will communicate with the ipify servers
+    // in order to retrieve the IP address
+    $.get("https://ipinfo.io", function(response) {
+            alert(response.ip);
+        }, "json")
+         
+        // "json" shows that data will be fetched in json format
+    </script>
+</head>
+ 
+<body>
+    <center>
+        <!-- <h1>What is my ip address dude!!</h1> -->
+        <h3>Getting Client IP address with Poppup :)</h3>
+    </center>
+</body>
+ 
+</html>
