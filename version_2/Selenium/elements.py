@@ -11,7 +11,7 @@
 
 from selenium import webdriver
 
-chrome_driver_path = "/Users/sadikturan/Drivers/chromedriver"
+chrome_driver_path = "C:/chromedriver"
 
 driver = webdriver.Chrome(chrome_driver_path)
 

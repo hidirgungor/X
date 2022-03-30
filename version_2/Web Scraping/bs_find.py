@@ -24,4 +24,4 @@ for a in obj.find_all('a'):
 
 
 
-# print(sonuc)
+print(sonuc)
