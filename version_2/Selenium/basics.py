@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-chrome_driver_path = "/Users/sadikturan/Drivers/chromedriver"
+chrome_driver_path = "C:/chromedriver"
 
 driver = webdriver.Chrome(chrome_driver_path)
 
@@ -15,10 +15,10 @@ driver.save_screenshot("github.png")
 
 time.sleep(2)
 
-driver.get(url + "sadikturan")
+driver.get(url + "hidirgungor")
 
 if "sadikturan" in driver.title:
-    driver.save_screenshot("github-sadikturan.png")
+    driver.save_screenshot("github-hidirgungor.png")
 
 print(driver.title)
 
