@@ -17,7 +17,7 @@ time.sleep(2)
 
 driver.get(url + "hidirgungor")
 
-if "sadikturan" in driver.title:
+if "hidirgungor" in driver.title:
     driver.save_screenshot("github-hidirgungor.png")
 
 print(driver.title)
