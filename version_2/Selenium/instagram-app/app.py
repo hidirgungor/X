@@ -5,8 +5,7 @@ import time
 
 class Instagram:
 
-    driver_path = "/Users/sadikturan/Drivers/chromedriver"
-    # driver_path = "C:\Driver\chromedriver"
+    driver_path = "C:\chromedriver"
 
     def __init__(self, username, password):
         self.username = username
